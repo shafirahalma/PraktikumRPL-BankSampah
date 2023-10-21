@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Register</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+  </head>
+  <style>
+    h2 {
+      background-color: black;
+      color: white;
+      font-family: sans-serif;
+      text-align: center;
+      width: 45%;
+      margin: auto;
+      padding: 20px;
+    }
+
+    body {
+      background-image: url("assets/img/hutan.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .container {
+      max-width: 400px;
+    }
+
+    .card-header {
+      background-color: #4e73df;
+      color: white;
+      padding: 20px;
+    }
+
+    .card-body {
+      padding: 20px;
+    }
+
+    .box-input {
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    .box-input input {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      outline: none;
+    }
+
+    .btn-input {
+      display: block;
+      width: 100%;
+      background-color: #4e73df;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .btn-input:hover {
+      background-color: #2653d4;
+    }
+
+    .small a {
+      color: #4e73df;
+      text-decoration: none;
+    }
+  </style>
+
+  <body class="bg-primary">
+    <div id="layoutAuthentication">
+      <div id="layoutAuthentication_content">
+        <main>
+          <div class="container">
+            <div class="card shadow-lg border-0 rounded-lg mt-5">
+              <div class="card-header">
+                <h3 class="text-center font-weight-light my-1">Create Account</h3>
+              </div>
+              <div class="card-body">
+                <form action="register.php" method="POST">
+                  <div class="box-input">
+                    <input type="text" name="username" placeholder="Username" required />
+                  </div>
+                  <div class="box-input">
+                    <input type="text" name="nama" placeholder="Nama" required />
+                  </div>
+                  <div class="box-input">
+                    <input type="text" name="alamat" placeholder="Alamat" required />
+                  </div>
+                  <div class="box-input">
+                    <input type="text" name="telepon" placeholder="Telepon" required />
+                  </div>
+                  <div class="box-input">
+                    <input type="text" name="email" placeholder="Email" required />
+                  </div>
+                  <div class="box-input">
+                    <input type="text" name="password" placeholder="Password" required />
+                  </div>
+                  <div>
+                    <button type="submit" name="register" class="btn-input">Create Account</button>
+                  </div>
+                </form>
+              </div>
+              <div class="card-footer text-center py-3">
+                <div class="small"><a href="login_nasabah.php">Have an account? Go to login</a></div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

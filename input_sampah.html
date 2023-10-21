@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Data Sampah</title>
+    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <style>
+      /* Add custom styles for the form */
+      body {
+        background-color: #f8f9fa;
+      }
+
+      .card-body {
+        margin-top: 20px;
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 6px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .form-row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -10px;
+        margin-right: -10px;
+      }
+
+      .form-row .form-group {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding: 10px;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 6px;
+        font-weight: 600;
+      }
+
+      .form-group input {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+      }
+
+      .form-group input:focus {
+        outline: none;
+        box-shadow: 0 0 5px #6c757d;
+      }
+
+      .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+      }
+
+      .btn-primary:hover {
+        background-color: #0069d9;
+        border-color: #0062cc;
+      }
+    </style>
+  </head>
+
+  <body class="sb-nav-fixed">
+    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+      <!-- Navbar Brand-->
+      <a class="navbar-brand ps-3" href="login_admin.php">Welcome Admin</a>
+      <!-- Sidebar Toggle-->
+      <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+      <!-- Navbar-->
+    </nav>
+    <div id="layoutSidenav">
+      <div id="layoutSidenav_nav">
+        <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+          <div class="sb-sidenav-menu">
+            <div class="nav">
+              <a class="nav-link" href="dashboard.php">
+                <div class="sb-nav-link-icon"><i class="fas fa-user-alt"></i></div>
+                Data Nasabah
+              </a>
+              <a class="nav-link" href="data_sampah.php">
+                <div class="sb-nav-link-icon"><i class="fas fa-trash-alt"></i></div>
+                Data Sampah
+              </a>
+              <a class="nav-link" href="tsetor.php">
+                <div class="sb-nav-link-icon"><i class="fas fa-handshake-alt"></i></div>
+                Transaksi Setor
+              </a>
+              <a class="nav-link" href="ttarik.php">
+                <div class="sb-nav-link-icon"><i class="fas fa-handshake-alt"></i></div>
+                Transaksi Tarik
+              </a>
+              <a class="nav-link" href="index.html">
+                <div class="sb-nav-link-icon"><i class="fas fa-sign-out-alt"></i></div>
+                Logout
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div id="layoutSidenav_content">
+        <main>
+          <div class="container-fluid px-4">
+            <h1 class="mt-4">Data Sampah</h1>
+
+            <!-- DataTales Example -->
+            <div class="card-body">
+              <form action="input_sampah.php" method="POST">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="ID_sampah">ID Sampah</label>
+                    <input type="text" class="form-control" id="ID_sampah" name="ID_sampah" />
+                  </div>
+                  <div class="form-group">
+                    <label for="jenis">Jenis Sampah</label>
+                    <input type="text" class="form-control" id="jenis" name="jenis" />
+                  </div>
+                  <div class="form-group">
+                    <label for="satuan">Satuan</label>
+                    <input type="text" class="form-control" id="satuan" name="satuan" />
+                  </div>
+                  <div class="form-group">
+                    <label for="harga">Harga (Rp)</label>
+                    <input type="text" class="form-control" id="harga" name="harga" />
+                  </div>
+                </div>
+                <button type="submit" name="register" class="btn btn-primary">Insert</button>
+              </form>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
